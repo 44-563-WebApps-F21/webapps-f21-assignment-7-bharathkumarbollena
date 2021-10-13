@@ -24,6 +24,28 @@
       console.log(myTime)
   }
 
+  function startTime() {
+    
+    for(let i=0; i<3; i++){
+        setTimeout( ()=>{
+            document.getElementById("countdown").innerHTML = "Count: " + i
+        }, (3-i)*1000)
+    }
+    setTimeout(()=>{
+        checkMyTime()
+    }, 3000)
+  }
+
+  function checkMyTime(){
+    var element = document.getElementById("target")
+    if(myTime == undefined)
+        element.innerHTML = "Too Slow"
+    else{
+        var buttonTime = Date.now()
+        var difference = buttonTime - myTime
+        element.innerHTML = "Time was " + difference
+    }
+  }
   </script>
 
 </body>
