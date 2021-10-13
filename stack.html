@@ -30,15 +30,13 @@
         <div class="stack">row item 1</div>   
         <div class="stack">row item 2</div>  
         <div class="stack">row item 3</div>  
-    </div>
-    <br>
-    
+    </div><br>
     <p> Press the button to create an new element of type div and then add it to the container.</p>
     <input id="inputElement" type="text"><br><br>
 	<button onclick="makeNewDiv()">Push value</button>
     <button onclick="popItem()">Pop</button>
     <button onclick="zap()">Zap values</button>
-	
+	<button onclick="unique()">Unique</button>
     <script>
         function makeNewDiv(){
             /* make the div and its text */
@@ -66,6 +64,17 @@
                         stackItems[i].remove()
                         console.log(itemToBeRemoved)
                         i--
+                    }
+                }
+            }
+        }
+        function unique(){
+            var stackItems = document.getElementsByClassName("stack")
+            for(var i=0; i<=stackItems.length; i++){
+                for(var j=i+1; j<stackItems.length; j++){
+                    if(stackItems[i].innerHTML == stackItems[j].innerHTML){
+                        stackItems[i].remove()
+                        i--;
                     }
                 }
             }
