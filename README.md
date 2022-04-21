@@ -9,4 +9,4 @@ Hosted at   https://44-563-webapps-f21.github.io/webapps-f21-assignment-7-bharat
 Hosted at   https://44-563-webapps-f21.github.io/webapps-f21-assignment-7-bharathkumarbollena/stack.html
 
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/44-563-WebApps-F21/webapps-f21-assignment-7-bharathkumarbollena/blob/main/appleTree.jpg)
